@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+  }
+  
+  .iconWrapper {
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    fill: #ff6347;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .homeLink {
+    color: #0066cc;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid #0066cc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  .homeLink:hover {
+    background-color: #0066cc;
+    color: #fff;
+  }
+  
