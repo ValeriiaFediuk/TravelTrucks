@@ -13,6 +13,7 @@ import {
 import storage from "redux-persist/lib/storage";
 import { truckReducer } from './trucks/slice';
 import { filtersReducer } from './filters/slice';
+import { favouritesReducer } from "./favourites/slice";
 
 const filtersPersistConfig = {
   key: "filters",
@@ -22,6 +23,7 @@ const filtersPersistConfig = {
 export const store = configureStore({
   reducer: {
     trucks:truckReducer,
+    favourites: favouritesReducer,
     filters: persistReducer(filtersPersistConfig, filtersReducer),
   },
   middleware: (getDefaultMiddleware) =>

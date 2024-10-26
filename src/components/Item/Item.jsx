@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 import css from "./Item.module.css";
 import icons from '../../assets/sprite.svg';
 import Features from "../Features/Features";
+import { toggleFavourite } from "../../redux/favourites/slice";
 
 const Item = ({ truck }) => {
+
+  const handleToggleFavourite = () => {
+    dispatch(toggleFavourite(truck.id));
+  };
+
   return (
     <div className={css.item_wrapper}>
       {truck.gallery?.[0]?.thumb && (
@@ -19,6 +25,16 @@ const Item = ({ truck }) => {
           <h2 className={css.name_title}>{truck.name}</h2>
           <div className={css.price_wrapper}>
             <p>{`€ ${Number(truck.price).toFixed(2)}`}</p>
+            <button 
+              type="button" 
+              onClick={handleToggleFavourite} 
+              className={css.heart_button}
+              aria-label="Toggle favorite"
+            >
+              <svg width="24" height="24" className={css.heart_icon}>
+                <use href={`${icons}#heart`} />
+              </svg>
+            </button>
           </div>
         </div>
         <div className={css.rating_wrapper}>

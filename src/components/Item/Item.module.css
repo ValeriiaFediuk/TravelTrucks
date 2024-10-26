@@ -11,7 +11,7 @@
     object-fit:cover;
 }
 
-.favourite_wrapper{
+.price_wrapper{
     display: flex;
     gap:12px;
     align-items: center;
@@ -83,3 +83,19 @@
 .item_button:hover {
     background-color: var(--button-hover);
 }
+
+.heart_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+  }
+  
+  .heart_icon {
+    fill: var(--main);
+    transition: fill 0.2s ease;
+  }
+  
+  .heart_button:hover .heart_icon {
+    fill: var(--button);
+  }
