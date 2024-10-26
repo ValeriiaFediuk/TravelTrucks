@@ -97,12 +97,13 @@
 }
 
 .group_wrapper p {
+    display: flex;
     border: 1px solid var(--gray-light);
     border-radius: 12px;
+    gap: 8px;
     width: 112px;
     height: 96px;
     cursor: pointer;
-    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -129,3 +130,4 @@
 .group_wrapper input[type="radio"]:checked+p {
     border: 1px solid var(--button-hover);
 }
+ 

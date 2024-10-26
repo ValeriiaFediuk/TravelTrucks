@@ -27,8 +27,9 @@ const Filters = () => {
               {({ errors, touched }) => (
                 <Form>
             <div className={css.input_wrapper}>
-              <label  className={css.filter_title} htmlFor="location">Location</label>
+              <label className={css.filter_title} htmlFor="location">Location</label>
               <Field
+                id="location"
                 className={css.input_location}
                 name="location"
                 type="text"
@@ -48,7 +49,7 @@ const Filters = () => {
               <label>
                 <Field type="checkbox" name="features" value="AC" />
                 <p>
-                  <svg  width="20" height="30">
+                  <svg  width="32" height="32">
                           <use href={`${icons}#ac`} />
                   </svg>
                   AC
@@ -57,7 +58,7 @@ const Filters = () => {
               <label>
                 <Field type="checkbox" name="features" value="automatic" />
                 <p>
-                  <svg  width="20" height="30">
+                  <svg  width="32" height="32">
                           <use href={`${icons}#diagram`} />
                   </svg>
                   Automatic
@@ -66,7 +67,7 @@ const Filters = () => {
               <label>
                 <Field type="checkbox" name="features" value="kitchen" />
                 <p>
-                  <svg  width="20" height="30">
+                  <svg  width="32" height="32">
                           <use href={`${icons}#cup-hot`} />
                   </svg>
                   Kitchen
@@ -75,7 +76,7 @@ const Filters = () => {
               <label>
                 <Field type="checkbox" name="features" value="TV" />
                 <p>
-                  <svg  width="20" height="30">
+                  <svg  width="32" height="32">
                           <use href={`${icons}#tv`} />
                   </svg>
                   TV
@@ -84,8 +85,8 @@ const Filters = () => {
               <label>
                 <Field type="checkbox" name="features" value="bathroom" />
                   <p>
-                    <svg width="20" height="30">
-                            <use href={`${icons}#water`} />
+                    <svg width="32" height="32">
+                            <use href={`${icons}#shower`} />
                     </svg>
                     Bathroom
                   </p>
